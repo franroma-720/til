@@ -13,3 +13,4 @@ I would like to learn more about...
 - How to use VSCode more efficiently
 - [iTerm2](https://iterm2.com/documentation.html) Tricks
 - Front End Development (HTML, CSS)
+- Developer Tools in Web Browsers
