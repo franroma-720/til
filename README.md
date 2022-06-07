@@ -14,3 +14,5 @@ I would like to learn more about...
 - [iTerm2](https://iterm2.com/documentation.html) Tricks
 - Front End Development (HTML, CSS)
 - Developer Tools in Web Browsers
+- [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
+- [Forecasting: Principles and Practice](https://otexts.com/fpp3/)
