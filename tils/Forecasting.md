@@ -17,7 +17,7 @@ Time series data can be stored in `tsibble` objects, which are extended tidy dat
   - The `ACF()` function calculates the autocorrelation of the time series.
     This function in combination with `autoplot` can be used to see how the correlations change with lag k, also known as a correlogram.
 
-### Time Series Patterns
+## Time Series Patterns
 
 - Trend: long term increase or decrease in the data
 - Seasonal: time series if affected by seasonal factors such as the time of year or day of the week (fixed and known period))
@@ -32,3 +32,9 @@ Time series data can be stored in `tsibble` objects, which are extended tidy dat
 - Time series that shows no autocorrelation are called **white noise**.
   For a white noise series, we expect 95% of the spikes in the ACF to lie within ±2/√T where T is the length of the time series.
   If one or more large spikes are outside these bounds, or if substantially more than 5% of spikes are outside these bounds, then the series is probably not white noise.
+
+## Time Series Decomposition
+
+Time series are typically decomposed into three componenets (called the STL decomposition method): a trend-cycle componenet, a seasonal component, and a remainder component.
+We can use additive or multiplicative decompositions.
+Before decomposing, it can sometimes be helpful to transform the data using calendar adjustments, population adjustments, inflation adjustments, or mathematical transformations.
