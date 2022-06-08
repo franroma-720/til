@@ -35,6 +35,9 @@ Time series data can be stored in `tsibble` objects, which are extended tidy dat
 
 ## Time Series Decomposition
 
-Time series are typically decomposed into three componenets (called the STL decomposition method): a trend-cycle componenet, a seasonal component, and a remainder component.
+Time series are typically decomposed into three componenets: a trend-cycle componenet, a seasonal component, and a remainder component.
 We can use additive or multiplicative decompositions.
 Before decomposing, it can sometimes be helpful to transform the data using calendar adjustments, population adjustments, inflation adjustments, or mathematical transformations.
+
+- There are classical decomposition methods originating in the 1920s, which are rarely used today due to shortcomings (although more advanced methods build off of this approach).
+- There is also the STL decomposition method - “Seasonal and Trend decomposition using Loess”.
