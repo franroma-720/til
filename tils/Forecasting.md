@@ -23,15 +23,16 @@ Time series data can be stored in `tsibble` objects, which are extended tidy dat
 - Seasonal: time series if affected by seasonal factors such as the time of year or day of the week (fixed and known period))
 - Cyclic: data exhibits rises and falls that are not of a fixed frequency
 
-**Autocorreltations** are the correlation between lagged values of a time series.
+**Autocorrelations** are the correlation between lagged values of a time series.
 
 - When data have a trend, the autocorrelations for small lags tend to be large and positive because observations nearby in time are also nearby in value.
-  So the ACF of a trended time series tends to have positive values that slowly decrease as the lags increase.
+  So the AutoCorrelation Function (ACF) of a trended time series tends to have positive values that slowly decrease as the lags increase.
 - When data are seasonal, the autocorrelations will be larger for the seasonal lags (at multiples of the seasonal period) than for other lags.
 - When data are both trended and seasonal, you see a combination of these effects.
 - Time series that shows no autocorrelation are called **white noise**.
   For a white noise series, we expect 95% of the spikes in the ACF to lie within ±2/√T where T is the length of the time series.
   If one or more large spikes are outside these bounds, or if substantially more than 5% of spikes are outside these bounds, then the series is probably not white noise.
+
 
 ## Time Series Decomposition
 
@@ -41,3 +42,8 @@ Before decomposing, it can sometimes be helpful to transform the data using cale
 
 - There are classical decomposition methods originating in the 1920s, which are rarely used today due to shortcomings (although more advanced methods build off of this approach).
 - There is also the STL decomposition method - “Seasonal and Trend decomposition using Loess”.
+
+
+## Time Series Features
+
+Interesting features to calculate over a time series include quantiles (0%, 25%, 50%, 75%, 100%), autocorrelation features, STL features, and a number of other features from the `feasts` package, which includes 55 features. PCA can be a useful method for identifying which features are most significant rather than reviewing them all individually against one another.
