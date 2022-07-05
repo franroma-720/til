@@ -47,3 +47,13 @@ Before decomposing, it can sometimes be helpful to transform the data using cale
 ## Time Series Features
 
 Interesting features to calculate over a time series include quantiles (0%, 25%, 50%, 75%, 100%), autocorrelation features, STL features, and a number of other features from the `feasts` package, which includes 55 features. PCA can be a useful method for identifying which features are most significant rather than reviewing them all individually against one another.
+
+
+## Simple Forecasting Methods
+
+These simple methods typically serve as benchmarks rather than the desired models of choice. If a more advanced model is not better than these simple methods, then it is not worth considering.
+
+- Mean Method: the forecast of all future values are equal to the average of the historical data
+- Naïve Method: the forecast of all future values are equal to the value of the last observation
+- Seasonal Naïve Method: the forecast of all future values are equal to the values of the last observation from the same season (e.g., the same month of the previous year)
+- Drift Method: the equivalent of drawing a line between the first and last observations and extrapolating it into the future
