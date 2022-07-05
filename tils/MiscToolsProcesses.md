@@ -7,9 +7,19 @@
 
 ## Tools
 
+### Productivity Tools
+
 - Lucidchart
 - Miro
 - EasyRetro.io
 - Notion
 - Linear
 - Wrike
+- Donut Slack App
+
+
+### Tech Tools
+
+- PagerDuty
+- Datadog
+- Monte Carlo Data
