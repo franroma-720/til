@@ -49,7 +49,9 @@ Before decomposing, it can sometimes be helpful to transform the data using cale
 Interesting features to calculate over a time series include quantiles (0%, 25%, 50%, 75%, 100%), autocorrelation features, STL features, and a number of other features from the `feasts` package, which includes 55 features. PCA can be a useful method for identifying which features are most significant rather than reviewing them all individually against one another.
 
 
-## Simple Forecasting Methods
+## Forecasting Toolbox
+
+### Simple Forecasting Methods
 
 These simple methods typically serve as benchmarks rather than the desired models of choice. If a more advanced model is not better than these simple methods, then it is not worth considering.
 
@@ -57,3 +59,29 @@ These simple methods typically serve as benchmarks rather than the desired model
 - Naïve Method: the forecast of all future values are equal to the value of the last observation
 - Seasonal Naïve Method: the forecast of all future values are equal to the values of the last observation from the same season (e.g., the same month of the previous year)
 - Drift Method: the equivalent of drawing a line between the first and last observations and extrapolating it into the future
+
+
+### Residuals
+
+The residuals in a time series model are what is left over after fitting a model. If a transformation has been used in the model, the residuals on the transaformed scale are called **innovation residuals**.
+
+A good forecastign method will yield innovation residuals with the following properties:
+
+1. The innovation residuals are uncorrelated.
+2. The innovation residuals have zero mean.
+
+Additionally, it is useful but not necessary for the innovation residuals to also have the following properties:
+
+3. The innovation residuals have constant variance. This is known as “homoscedasticity”.
+4. The innovation residuals are normally distributed.
+
+Note that residuals are calculated on the training set while forecast "errors" are calculated on the test set. Additionally, residuals are based on one-step forecasts while forecast errors can involve multi-step forecasts.
+
+### Errors
+
+The two primary scale dependent error metrics used in forecasting are the Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). A forecast method that minimises the MAE will lead to forecasts of the median, while minimising the RMSE will lead to forecasts of the mean.
+
+Both MAE and RSME have scaled error counterparts, MeanAbsolute Scaled Error (MASE) and Root Mean Squared Scaled Error (RMSSE), scaling the errors based on the training MAE from a (seasonal or not) naïve forecast method. A scaled error is less than one if it arises from a better forecast than the average one-step naïve forecast computed on the training data. Conversely, it is greater than one if the forecast is worse than the average one-step naïve forecast computed on the training data.
+
+Percentage error metrics like Mean Absolute Percentage Error (MAPE) are commonly used but will be infinite or undefined is any observed values in the time series are 0. They also have the disadvantage that they put a heavier penalty on negative errors than on positive errors.
+
