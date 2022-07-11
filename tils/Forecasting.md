@@ -79,6 +79,8 @@ Note that residuals are calculated on the training set while forecast "errors" a
 
 ### Errors
 
+Error metrics are a way to measure point forecast accuracy.
+
 The two primary scale dependent error metrics used in forecasting are the Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). A forecast method that minimises the MAE will lead to forecasts of the median, while minimising the RMSE will lead to forecasts of the mean.
 
 Both MAE and RSME have scaled error counterparts, MeanAbsolute Scaled Error (MASE) and Root Mean Squared Scaled Error (RMSSE), scaling the errors based on the training MAE from a (seasonal or not) naïve forecast method. A scaled error is less than one if it arises from a better forecast than the average one-step naïve forecast computed on the training data. Conversely, it is greater than one if the forecast is worse than the average one-step naïve forecast computed on the training data.
