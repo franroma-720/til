@@ -46,3 +46,6 @@
 
 - [Manager Readme](https://managerreadme.com/)
 - [Manual of Me](https://www.manualof.me/)
+- Richard Feynman: 
+  - https://fs.blog/intellectual-giants/richard-feynman/
+  - https://fs.blog/feynman-technique/
