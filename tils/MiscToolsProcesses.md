@@ -39,7 +39,7 @@
 - [Tech Debt](https://martinfowler.com/articles/bottlenecks-of-scaleups/01-tech-debt.html)
 - [Facts and Fallacies of Software Engineering](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.94.2037&rep=rep1&type=pdf)
 - [Chelsea Troy Blog](https://chelseatroy.com/)
-
+- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
 ### Other Resources
 
