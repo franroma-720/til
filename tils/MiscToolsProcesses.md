@@ -45,6 +45,7 @@
 
 - [Manager Readme](https://managerreadme.com/)
 - [Manual of Me](https://www.manualof.me/)
+- [The Hierarchy of Engagement](https://sarahtavel.medium.com/the-hierarchy-of-engagement-5803bf4e6cfa)
 - Richard Feynman: 
   - https://fs.blog/intellectual-giants/richard-feynman/
   - https://fs.blog/feynman-technique/
