@@ -45,7 +45,9 @@
 
 - [Manager Readme](https://managerreadme.com/)
 - [Manual of Me](https://www.manualof.me/)
+- [Malloy](https://github.com/looker-open-source/malloy)
 - [The Hierarchy of Engagement](https://sarahtavel.medium.com/the-hierarchy-of-engagement-5803bf4e6cfa)
+- [GitLab Data Team Platform Open Source Handbook](https://about.gitlab.com/handbook/business-technology/data-team/platform)
 - Richard Feynman: 
   - https://fs.blog/intellectual-giants/richard-feynman/
   - https://fs.blog/feynman-technique/
