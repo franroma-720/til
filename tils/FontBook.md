@@ -1,3 +1,3 @@
 # Font Book
 
-iOS has a Font Book application!
+iOS has a Font Book application
